@@ -12,7 +12,7 @@ public abstract class Verlag {
     } 
 
     public void aboEntfernen(Abonnent abonnent) {
-    	System.out.println("Abonnent gekündigt.");
+    	System.out.println("Abonnent gekÃ¼ndigt.");
         abonnentenList.remove(abonnent); 
     } 
 

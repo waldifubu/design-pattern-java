@@ -1,4 +1,4 @@
-package observer_subjekt;
+package observer_listener;
 
 public interface Beobachter {
 	public abstract void update();

@@ -1,4 +1,4 @@
-package observer_java;
+package observer_java_observable;
 
 public class Client {
 	@SuppressWarnings("unused")
@@ -8,12 +8,15 @@ public class Client {
 		KonkretesSubjekt konkretesSubjekt = new KonkretesSubjekt();
 
 		// Erzeugung des Beobachters. Dabei wird
-		// das Subjekt übergeben und registriert.
+		// das Subjekt  Ã¼bergeben und registriert.
 		KonkreterBeobachter konkreterBeobachter = new KonkreterBeobachter(konkretesSubjekt);
 		KonkreterBeobachter konkreterBeobachter2 = new KonkreterBeobachter(konkretesSubjekt);
+		KonkreterBeobachter konkreterBeobachter3 = new KonkreterBeobachter(konkretesSubjekt);
 
-		// Zustandsänderung, Subjekt benachrichtigt
+		// ZustandsÃ¤nderung, Subjekt benachrichtigt
 		// daraufhin die Beobachter
-		konkretesSubjekt.setState(1);
+		konkretesSubjekt.setState(3);
+		
+		konkreterBeobachter.changeState(konkretesSubjekt, "5");
 	}
 }

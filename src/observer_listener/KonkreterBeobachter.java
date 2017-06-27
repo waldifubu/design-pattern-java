@@ -1,4 +1,4 @@
-package observer_subjekt;
+package observer_listener;
 
 public class KonkreterBeobachter implements Beobachter {
 
@@ -7,7 +7,7 @@ public class KonkreterBeobachter implements Beobachter {
 	public KonkreterBeobachter(KonkretesSubjekt konkretesSubjekt) {
 		this.konkretesSubjekt = konkretesSubjekt;
 
-		// Durchführung der Registrierung beim übergebenen Subjekt
+		// DurchfÃ¼hrung der Registrierung beim  Ã¼bergebenen Subjekt
 		this.konkretesSubjekt.addBeobachter(this);
 	}
 

@@ -1,4 +1,4 @@
-package observer_subjekt;
+package observer_listener;
 
 import java.util.ArrayList;
 import java.util.List;
